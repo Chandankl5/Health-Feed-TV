@@ -1,0 +1,30 @@
+const http = require('http');
+const debug = require('debug')('health-feed-tv');
+
+const app = require('../src/app');
+
+const port = process.env.PORT || 3000;
+
+app.set('port', port)
+
+/**
+ * Create HTTP server.
+ */
+
+const server = http.createServer(app);
+
+server.listen(port)
+
+server.on('error', handleOnServerError);
+
+server.on('listening', handleOnServerListening);
+
+function handleOnServerError(error) {
+    debug('error', error)
+}
+
+function handleOnServerListening() {
+    debug('Server Listening');
+}
+
+

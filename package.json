@@ -1,0 +1,32 @@
+{
+  "name": "Health-Feed-TV",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www ",
+    "migrations": "sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chandankl5/Health-Feed-TV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chandankl5/Health-Feed-TV/issues"
+  },
+  "homepage": "https://github.com/Chandankl5/Health-Feed-TV#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "debug": "^4.3.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}
